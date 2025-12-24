@@ -1,0 +1,18 @@
+server:
+  port: 8080
+
+providers:
+  - name: openai
+    base_url: https://code.v4.chat
+    api_key: cr_e0c84b7a4436591c16999626c3ec9082b564bc69f972e3ad959186b927efba1c
+    timeout: 30
+
+routes:
+  - model: gpt-5.2
+    provider: openai
+  - model: gpt-4o
+    provider: openai
+  - model: gpt-4o-mini
+    provider: openai
+  - model: gpt-3.5-turbo
+    provider: openai
